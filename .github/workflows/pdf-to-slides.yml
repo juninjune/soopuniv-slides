@@ -120,7 +120,7 @@ jobs:
       # --- PDF → 이미지 변환 ---
       - name: Convert PDF to slides
         if: steps.dropbox.outputs.changed == 'true'
-        run: python scripts/convert_pdf.py input.pdf
+        run: python scripts/convert_pdf.py input.pdf "${{ steps.dropbox.outputs.pdf_name }}"
 
       # --- 해시 파일 저장 (다음 실행 시 비교용) ---
       - name: Save PDF hash
