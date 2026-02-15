@@ -154,7 +154,7 @@ jobs:
           ref: main  # 방금 푸시된 최신 커밋을 가져옴
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
