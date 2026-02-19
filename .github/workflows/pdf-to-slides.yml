@@ -208,8 +208,8 @@ jobs:
               fields.append({'name': '🔗 실행 로그', 'value': f'[Actions 열기]({run_url})', 'inline': False})
           
           embed = {
-              'title':       f'{icon} SoopUniv 슬라이드 배포',
-              'description': f'**{pdf_name}** 변환 완료',
+              'title':       f'{icon} 버추얼 대학교 슬라이드 PDF 업데이트',
+              'description': f'**{pdf_name}** 업로드 완료',
               'color':       color,
               'fields':      fields,
               'footer':      {'text': repo},
